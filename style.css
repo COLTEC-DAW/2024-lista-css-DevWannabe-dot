@@ -32,9 +32,13 @@ abbr {
 div.summary {
     text-align: right;
 }
-.main p {
+.main {
     line-height: 1.5;
 }
 abbr {
     color: #000066;
+}
+/* Extras */
+.page-wrapper {
+    border-style: dashed;
 }
