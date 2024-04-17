@@ -1,0 +1,40 @@
+/** Paleta de cores
+* fundo: #e5e5e5
+* fonte: #000000
+* destaque: #000066
+*/
+
+/* Aspectos gerais */
+* {
+    font-size: 12px;
+    font-family: sans-serif;
+    background-color: #e5e5e5;
+}
+p {
+    text-indent: 1em;
+    color: #000000;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+h1 {
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+abbr {
+    font-variant: small-caps;
+}
+div.summary {
+    text-align: right;
+}
+.main p {
+    line-height: 1.5;
+}
+abbr {
+    color: #000066;
+}
