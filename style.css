@@ -76,7 +76,11 @@ footer a {
     border-width: 2px;
     padding: 0.5em;
 }
-/* Extras */
 .page-wrapper {
-    border-style: dashed;
+    position: relative;
+    border-style:dashed;
+}
+.explanation {
+    margin-right: 35%;
+    width: 60%;
 }
