@@ -1,10 +1,11 @@
-/** Paleta de cores
-* fundo: #e5e5e5
-* fonte: #000000
-* destaque: #000066
+/** Color palette
+* Background: #e5e5e5
+* Font: #000000
+* Highlight: #000066
 */
 
-/* Aspectos gerais */
+/* || GENERAL STYLES */
+
 * {
     font-size: 12px;
     font-family: sans-serif;
@@ -19,29 +20,35 @@ p {
     text-indent: 1em;
     color: #000000;
 }
-h1, h2, h3 {
-    text-align: center;
-}
-h1 {
-    font-size: 1.8rem;
-}
-h2 {
-    font-size: 1.4rem;
-}
-h3 {
-    font-size: 1.2rem;
-}
+h1,
+h2,
+h3 { text-align: center; }
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.2rem; }
 abbr {
     font-variant: small-caps;
+    color: #000066;
 }
+li {
+    list-style-type: none;
+    line-height: 1.5em;
+    text-align: center;
+}
+footer { margin: 4%; }
+footer a {
+    border-style: solid;
+    border-width: 2px;
+    padding: 0.5em;
+}
+
+/* || SITEWIDE */
+
 div.summary {
     text-align: right;
 }
 .main {
     line-height: 1.5;
-}
-abbr {
-    color: #000066;
 }
 section.intro {
     height: 550px;
@@ -63,24 +70,13 @@ header[role="banner"] h2 {
     background-color: inherit;
     display: inline;
 }
-li {
-    list-style-type: none;
-    line-height: 1.5em;         /* 1em fica muito apertado */
-    text-align: center;
-}
-footer {
-    margin: 4%;
-}
-footer a {
-    border-style: solid;
-    border-width: 2px;
-    padding: 0.5em;
-}
 .page-wrapper {
     position: relative;
     border-style:dashed;
 }
 .explanation {
     margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
     width: 60%;
 }
