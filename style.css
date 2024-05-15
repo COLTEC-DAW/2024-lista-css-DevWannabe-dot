@@ -87,3 +87,29 @@ header[role="banner"] h2 {
     right:10%;
     padding: 2%;
 }
+
+/* Pseudo-selectors */
+a {
+    color:#000066;
+    font-weight: bold;
+}
+a:hover {
+    color:rgb(100, 100, 202);
+}
+a:visited {
+    font-weight: normal;
+}
+.main .explanation :nth-child(2):first-letter {
+    font-size: 300%;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    float: left;
+}
+nav[role=navigation] ul li * {
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+nav[role=navigation] ul :last-child a {
+    border-bottom-style: solid;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
