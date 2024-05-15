@@ -50,6 +50,10 @@ div.summary {
 .main {
     line-height: 1.5;
 }
+.main footer a {
+    display: flex;
+    justify-content: center;
+}
 section.intro {
     height: 550px;
 }
@@ -83,25 +87,52 @@ header[role="banner"] h2 {
 .sidebar .wrapper .design-selection {
     /* float: right; */
     position: absolute;
-    bottom: 840px;
-    right:10%;
+    bottom: 1100px;
+    right:5%;
     padding: 2%;
+}
+.benefits {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.benefits h3 {
+    align-self: center;
+    flex: 0 0 30%; /* flex-grow | flex-shrink | flex-basis*/
+}
+.benefits p {
+    flex: 0 0 70%;
+}
+.benefits {
+    border-bottom: #000000;
+    border-bottom-style: solid;
+}
+.participation {
+    display: flex;
+    border-top:#000000;
+    border-top-style: solid;
+}
+.participation * {
+    flex: 0 1 50%;
+}
+.participation h3 {
+    align-self: center;
+    flex: 0 0 50%;
 }
 
 /* Pseudo-selectors */
 a {
     color:#000066;
-    font-weight: bold;
+    font-weight: 700;
 }
 a:hover {
     color:rgb(100, 100, 202);
 }
-a:visited {
-    font-weight: normal;
+a:visited, a:active {
+    font-weight: 400;
 }
 .main .explanation :nth-child(2):first-letter {
     font-size: 300%;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     float: left;
 }
 nav[role=navigation] ul li * {
