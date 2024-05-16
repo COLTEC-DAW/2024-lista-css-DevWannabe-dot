@@ -53,9 +53,10 @@ div.summary {
 .main p {
     line-height: 1.5;
 }
-.main footer a {
+.main footer {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 section.intro {
     height: 550px;
@@ -90,7 +91,7 @@ header[role="banner"] h2 {
 .sidebar .wrapper .design-selection {
     /* float: right; */
     position: absolute;
-    bottom: 63%;
+    bottom: 61%;
     left: 63%;
     padding: 2%;
 }
@@ -111,6 +112,7 @@ header[role="banner"] h2 {
 }
 .participation {
     display: flex;
+    flex-wrap: wrap;
     border-top:#000000;
     border-top-style: solid;
 }
