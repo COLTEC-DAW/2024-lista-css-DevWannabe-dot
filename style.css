@@ -58,7 +58,7 @@ section.intro {
     height: 550px;
 }
 #design-archives {
-    position: relative;
+    position: absolute;
 }
 header[role="banner"] {
     background-color: black;
@@ -87,8 +87,8 @@ header[role="banner"] h2 {
 .sidebar .wrapper .design-selection {
     /* float: right; */
     position: absolute;
-    bottom: 1100px;
-    right:5%;
+    bottom: 1000px;
+    left: 65%;
     padding: 2%;
 }
 .benefits {
