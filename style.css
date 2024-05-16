@@ -138,12 +138,11 @@ a:visited, a:active {
     font-family: Arial, sans-serif;
     float: left;
 }
-nav[role=navigation] ul li * {
+.design-selection li {
     border-top-style: solid;
     border-top-width: 1px;
 }
-nav[role=navigation] ul :last-child a {
+.design-selection ul:last-child {
     border-bottom-style: solid;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-bottom-width: 1px;
 }
