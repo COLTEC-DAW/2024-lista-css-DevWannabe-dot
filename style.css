@@ -52,7 +52,28 @@ footer a {
 /* Media queries */
 @media screen and (max-width: 768px) {
     /* Layout mobile */
-
+    * {
+        font-size: 12px;
+    }
+    .sidebar .wrapper .design-selection {
+        position: relative;
+    }
+    .explanation {
+        border-right: none;
+    }
+    .participation {
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-top:#000000;
+        border-top-style: solid;
+    }
+    .participation * {
+        flex: 0 1 50%;
+    }
+    .participation h3 {
+        align-self: center;
+        flex: 0 0 50%;
+    }
 }
 
 /* || SITEWIDE */
