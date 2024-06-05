@@ -90,7 +90,7 @@ header[role="banner"] h2 {
 .page-wrapper {
     position: relative;
     margin-left: auto;
-    border-style:dashed;
+    border-style: dashed;
 }
 .explanation {
     margin-right: 35%;
@@ -132,10 +132,6 @@ header[role="banner"] h2 {
 .participation h3 {
     align-self: center;
     flex: 0 0 50%;
-}
-.zen-resources ul {
-    background-color: aqua;
-    padding-left: none;
 }
 
 /* Pseudo-selectors */
