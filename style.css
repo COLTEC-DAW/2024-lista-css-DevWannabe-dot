@@ -1,10 +1,14 @@
-/** Color palette
+/**
+* Color palette
+*
 * Background: #e5e5e5
 * Font: #000000
 * Highlight: #000066
 */
 
-/* || GENERAL STYLES */
+/*  ==========================================================================
+    General styles
+    ========================================================================== */
 
 * {
     font-size: 16px;
@@ -33,6 +37,7 @@ abbr {
 }
 aside ul {
     list-style: none;
+    padding: 0;
 }
 aside li {
     text-align: center;
@@ -49,34 +54,9 @@ footer a {
     padding: 0.5em;
 }
 
-/* Media queries */
-@media screen and (max-width: 768px) {
-    /* Layout mobile */
-    * {
-        font-size: 12px;
-    }
-    .sidebar .wrapper .design-selection {
-        position: relative;
-    }
-    .explanation {
-        border-right: none;
-    }
-    .participation {
-        flex-direction: column;
-        flex-wrap: wrap;
-        border-top:#000000;
-        border-top-style: solid;
-    }
-    .participation * {
-        flex: 0 1 50%;
-    }
-    .participation h3 {
-        align-self: center;
-        flex: 0 0 50%;
-    }
-}
-
-/* || SITEWIDE */
+/*  ==========================================================================
+    Sitewide
+    ========================================================================== */
 
 div.summary {
     text-align: right;
@@ -122,7 +102,7 @@ header[role="banner"] h2 {
 .sidebar .wrapper .design-selection {
     position: absolute;
     bottom: 59.5%;
-    left: 62.5%;
+    left: 66%;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -143,6 +123,7 @@ header[role="banner"] h2 {
 }
 .participation {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     border-top:#000000;
     border-top-style: solid;
@@ -155,7 +136,45 @@ header[role="banner"] h2 {
     flex: 0 0 50%;
 }
 
-/* Pseudo-selectors */
+/*  Media queries
+    ==========================================================================*/
+    @media screen and (max-width: 768px) {
+        /* Mobile layout */
+        * {
+            font-size: 12px;
+        }
+        .sidebar .wrapper .design-selection {
+            position: relative;
+            left: auto;
+            bottom: auto;
+            padding: 0;
+        }
+        .explanation {
+            border-right: none;
+            margin-right: 0;
+            padding-right: 0;
+            width: initial;
+        }
+        .participation {
+            flex-direction: column;
+        }
+        .main p {
+            line-height: normal;
+        }
+    }
+    @media print {
+        /* Print layout */
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header[role="banner"] {
+            background-color: #e5e5e5;
+            color: black;
+        }
+    }
+
+/*  Pseudo-selectors
+    ==========================================================================*/
 a {
     color:#000066;
     font-weight: 700;
