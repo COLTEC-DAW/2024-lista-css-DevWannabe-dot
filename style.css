@@ -161,6 +161,9 @@ header[role="banner"] h2 {
         .main p {
             line-height: normal;
         }
+        section.intro {
+            height: auto;
+        }
     }
     @media print {
         /* Print layout */
